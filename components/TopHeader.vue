@@ -1,0 +1,46 @@
+<template>
+  <div
+    class="main-wrapper bg-white bg-opacity-75 border-b border-gray-100 py-1"
+  >
+    <nav class="flex col-start-2 justify-between items-center">
+      <nuxt-link
+        tag="div"
+        :to="{ path: '/' }"
+        class="cursor-pointer font-extrabold text-3xl"
+      >
+        NZ<span class="text-primary">.</span>
+      </nuxt-link>
+      <div class="flex justify-between w-96">
+        <nuxt-link
+          :to="{ path: '/', hash: '#work' }"
+          @click.native="scrollToId('work')"
+        >
+          Work
+        </nuxt-link>
+        <nuxt-link
+          :to="{ path: '/', hash: '#projects' }"
+          @click.native="scrollToId('projects')"
+        >
+          Projects</nuxt-link
+        >
+        <nuxt-link to="About"> About</nuxt-link>
+      </div>
+      <a :href="`mailto:${links.email}`">
+        <button class="primary text-sm">Contact</button>
+      </a>
+    </nav>
+  </div>
+</template>
+
+<script>
+import links from '../static/links.json'
+import scrollTo from '../mixins/scrollToHash.js'
+export default {
+  mixins: [scrollTo],
+  data() {
+    return {
+      links,
+    }
+  },
+}
+</script>

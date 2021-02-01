@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+
+p {
+  @apply text-black;
+}
+
+button {
+  @apply font-bold px-4 py-1 rounded-sm shadow-button transform transition-transform transition-shadow transition-all duration-500 ease-in-out;
+  &:hover {
+    --tw-translate-y: -0.085rem;
+  }
+}
+
+button {
+  &.primary {
+    @apply bg-primary text-white;
+    &:hover {
+      @apply bg-primary-light  shadow-button-hover;
+    }
+  }
+}
+
+button {
+  &.secondary {
+    @apply bg-white text-primary;
+  }
+}
+
+svg {
+  @apply fill-current;
+}
+input::placeholder,
+textarea::placeholder {
+  @apply text-gray-600;
+}
+button:focus {
+  outline: none;
+}
+
+.main-wrapper {
+  @apply grid;
+  grid-template-columns: 16px 1fr 16px;
+  @screen md {
+    grid-template-columns: 1fr 1150px 1fr;
+  }
+}
+
+a.nuxt-link-active {
+  @apply text-primary;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(120px);
+    transform: translateY(120px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+.animate-fade {
+  animation: fadeUp 2s 0.1s 1 both cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/Proxima Nova Bold.otf');
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/Proxima Nova Thin.otf');
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/Proxima Nova Black.otf');
+  font-style: normal;
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/Proxima Nova Extrabold.otf');
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/ProximaNova-Regular.otf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@tailwind utilities;
