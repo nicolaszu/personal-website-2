@@ -27,7 +27,7 @@
     "fibers": "^5.0.0",
     "lottie-web-vue": "^1.0.1",
     "nuxt": "^2.14.12",
-    "postcss": "7",
+    "postcss": "8",
     "sass": "^1.32.5",
     "sass-loader": "^10.1.1"
   },
