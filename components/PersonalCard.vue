@@ -34,8 +34,8 @@
 </template>
 
 <script>
-import neuroTechCover from '@/static/images/neurotechx/NTCover.svg?inline'
-import computerVisionCover from '@/static/images/computerVision/computerVisionCover.svg?inline'
+import neuroTechCover from '~/assets/svg-images/neurotechx/NTCover.svg?inline'
+import computerVisionCover from '~/assets/svg-images/computerVision/computerVisionCover.svg?inline'
 export default {
   components: {
     neuroTechCover,

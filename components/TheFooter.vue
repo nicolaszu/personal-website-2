@@ -25,7 +25,7 @@
           <lottie-animation
             ref="anim"
             class="w-24 h-full absolute top-0 right-0"
-            :animation-data="require('../static/animations/fish.json')"
+            :animation-data="require('~/assets/animations/fish.json')"
             :loop="true"
             :auto-play="true"
             :speed="1"
@@ -41,9 +41,9 @@
 
 <script>
 import LottieAnimation from 'lottie-web-vue' // import lottie-web-vue
-import links from '../static/links.json'
-import linkedinIcon from '../static/icons/linkedin.svg?inline'
-import mailIcon from '../static/icons/mail.svg?inline'
+import links from '~/assets/links.json'
+import linkedinIcon from '~/assets/icons/linkedin.svg?inline'
+import mailIcon from '~/assets/icons/mail.svg?inline'
 
 export default {
   components: { linkedinIcon, mailIcon, LottieAnimation },

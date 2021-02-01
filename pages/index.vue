@@ -12,7 +12,7 @@
       <lottie-animation
         ref="anim"
         class="row-span-4 justify-self-center self-center w-auto row-start-3 md:row-start-1 col-start-1 md:col-start-2"
-        :animation-data="require('../static/animations/profile.json')"
+        :animation-data="require('~/assets/animations/profile.json')"
         :loop="true"
         :auto-play="true"
         :speed="1"
@@ -112,10 +112,10 @@
 import LottieAnimation from 'lottie-web-vue' // import lottie-web-vue
 import WorkCard from '../components/WorkCard.vue'
 import personalCard from '../components/PersonalCard.vue'
-import linkedinIcon from '../static/icons/linkedin.svg?inline'
-import mailIcon from '../static/icons/mail.svg?inline'
-import links from '../static/links.json'
 import scrollTo from '../mixins/scrollToHash.js'
+import linkedinIcon from '~/assets/icons/linkedin.svg?inline'
+import mailIcon from '~/assets/icons/mail.svg?inline'
+import links from '~/assets/links.json'
 
 export default {
   components: {
@@ -162,20 +162,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@keyframes fadeUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(120px);
-    transform: translateY(120px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-}
-.animate-fade {
-  animation: fadeUp 2s 0.1s 1 both cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-</style>
+<style lang="scss" scoped></style>

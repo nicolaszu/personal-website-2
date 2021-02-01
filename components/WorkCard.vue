@@ -69,7 +69,7 @@
 
 <script>
 import trailBeePhone from '../components/trailBee/trailBeePhone'
-import homesCover from '~/static/images/homes/HomesCover.svg?inline'
+import homesCover from '~/assets/svg-images/homes/HomesCover.svg?inline'
 
 export default {
   components: {

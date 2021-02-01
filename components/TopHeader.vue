@@ -33,8 +33,8 @@
 </template>
 
 <script>
-import links from '../static/links.json'
 import scrollTo from '../mixins/scrollToHash.js'
+import links from '~/assets/links.json'
 export default {
   mixins: [scrollTo],
   data() {
