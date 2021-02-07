@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import iphoneMask from '~/assets/svg-images/trailBee/IphoneMaskLogo.svg'
+import iphoneMask from '~/assets/svg-images/trailBee/IphoneMaskLogo.svg?inline'
 
 export default {
   components: {

@@ -42,8 +42,8 @@
 <script>
 import LottieAnimation from 'lottie-web-vue' // import lottie-web-vue
 import links from '~/assets/links.json'
-import linkedinIcon from '~/assets/icons/linkedin.svg'
-import mailIcon from '~/assets/icons/mail.svg'
+import linkedinIcon from '~/assets/icons/linkedin.svg?inline'
+import mailIcon from '~/assets/icons/mail.svg?inline'
 
 export default {
   components: { linkedinIcon, mailIcon, LottieAnimation },
