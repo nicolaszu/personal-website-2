@@ -113,8 +113,8 @@ import LottieAnimation from 'lottie-web-vue' // import lottie-web-vue
 import WorkCard from '../components/WorkCard.vue'
 import personalCard from '../components/PersonalCard.vue'
 import scrollTo from '../mixins/scrollToHash.js'
-import linkedinIcon from '~/assets/icons/linkedin.svg?inline'
-import mailIcon from '~/assets/icons/mail.svg?inline'
+import linkedinIcon from '~/assets/icons/linkedin.svg'
+import mailIcon from '~/assets/icons/mail.svg'
 import links from '~/assets/links.json'
 
 export default {
