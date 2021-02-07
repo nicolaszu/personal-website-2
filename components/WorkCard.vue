@@ -14,7 +14,7 @@
             {{ project.subCategory }}
           </p>
           <h3 class="font-black text-4xl md:text-5xl">{{ project.title }}</h3>
-          <p class="text-gray-700 text-xl pb-6 md:pb-8">
+          <p class="text-gray-700 text-xl pb-6 md:pb-6">
             {{ project.description }}
           </p>
         </div>
@@ -69,12 +69,10 @@
 
 <script>
 import trailBeePhone from '../components/trailBee/trailBeePhone'
-import homesCover from '~/assets/svg-images/homes/HomesCover.svg?inline'
 
 export default {
   components: {
     trailBeePhone,
-    homesCover,
   },
   props: {
     project: {

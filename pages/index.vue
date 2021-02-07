@@ -4,7 +4,7 @@
       class="grid gap-x-6 grid-cols-1 md:grid-cols-2 pt-16 md:pt-32 pb-12 md:pb-48"
     >
       <h1
-        class="col-start-1 text-6xl md:text-8xl leading-none font-extrabold md:font-black animate-fade mb-6 md:mb-0"
+        class="col-start-1 text-6xl md:text-8xl leading-none font-extrabold md:font-black animate-fade mb-6 md:mb-3"
         :style="{ 'animation-delay': '.1s' }"
       >
         Nicolas Zuluaga
@@ -95,7 +95,7 @@
         <p class="text-gray-500 text-lg md:text-xl">Projects</p>
       </div>
       <div
-        class="grid grid-cols-1 lg:grid-cols-3 gap-x-16 gap-y-16 md:gap-y-28 pb-24"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-16 md:gap-y-28 pb-24"
       >
         <personal-card
           v-for="project of personalProjects"

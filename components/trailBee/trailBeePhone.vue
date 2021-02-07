@@ -1,12 +1,12 @@
 <template>
   <div class="relative flex phone-float" :style="{ width: 'fit-content' }">
     <img
-      class="relative h-80 md:h-96 w-auto"
+      class="relative h-80 lg:h-96 w-auto"
       src="/images/trailBee/iPhoneXTrailBee.png"
       alt="profile"
     />
     <iphone-mask
-      class="top-0 right-0 object-contain absolute h-auto mr-4 w-60 md:w-72"
+      class="top-0 right-0 object-contain absolute h-auto mr-4 w-60 lg:w-72"
     />
   </div>
 </template>
