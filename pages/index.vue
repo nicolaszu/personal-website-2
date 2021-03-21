@@ -4,7 +4,7 @@
       class="grid gap-x-6 grid-cols-1 md:grid-cols-2 pt-16 md:pt-32 pb-12 md:pb-48"
     >
       <h1
-        class="col-start-1 text-6xl md:text-8xl leading-none font-extrabold md:font-black animate-fade mb-6 md:mb-3"
+        class="col-start-1 text-6xl md:text-8xl leading-none font-extrabold md:font-black animate-fade-up mb-6 md:mb-3"
         :style="{ 'animation-delay': '.1s' }"
       >
         Nicolas Zuluaga
@@ -18,7 +18,7 @@
         :speed="1"
       />
       <h2
-        class="col-start-1 text-gray-700 text-xl md:text-2xl mb-7 animate-fade"
+        class="col-start-1 text-gray-700 text-xl md:text-2xl mb-7 animate-fade-up"
         :style="{ 'animation-delay': '.2s' }"
       >
         Currently developing and designing the next-generation of enteprise tax
@@ -27,7 +27,7 @@
         building impactful solutions.
       </h2>
       <div
-        class="col-start-1 mb-8 md:mb-12 flex animate-fade"
+        class="col-start-1 mb-8 md:mb-12 flex animate-fade-up"
         :style="{ 'animation-delay': '.3s' }"
       >
         <nuxt-link
@@ -43,7 +43,7 @@
         </a>
       </div>
       <div
-        class="col-start-1 flex items-center bg-gray-100 p-4 rounded-lg justify-between animate-fade"
+        class="col-start-1 flex items-center bg-gray-100 p-4 rounded-lg justify-between animate-fade-up"
         :style="{ 'animation-delay': '.4s' }"
       >
         <div class="relative flex items-center">
@@ -76,7 +76,7 @@
       </div>
     </div>
 
-    <div id="work" class="animate-fade pb-8">
+    <div id="work" class="animate-fade-up pb-8">
       <div class="flex col-start-1 items-center mb-8">
         <hr class="w-12 border-gray-200 mr-3" />
         <p class="text-gray-500 text-lg md:text-xl">Work</p>
