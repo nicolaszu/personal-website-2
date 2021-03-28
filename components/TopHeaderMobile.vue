@@ -33,10 +33,10 @@
           <nuxt-link
             class="popup-option animate-fade"
             :style="{ 'animation-delay': '.2s' }"
-            :to="{ path: '/', hash: '#projects' }"
-            @click.native="toggleOption('projects')"
+            :to="{ path: '/', hash: '#personal' }"
+            @click.native="toggleOption('personal')"
           >
-            Projects</nuxt-link
+            Personal</nuxt-link
           >
           <nuxt-link
             class="popup-option animate-fade"

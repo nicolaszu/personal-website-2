@@ -18,15 +18,15 @@
           Work
         </nuxt-link>
         <nuxt-link
-          :to="{ path: '/', hash: '#projects' }"
-          @click.native="scrollToId('projects')"
+          :to="{ path: '/', hash: '#personal' }"
+          @click.native="scrollToId('personal')"
         >
-          Projects</nuxt-link
+          Personal</nuxt-link
         >
         <nuxt-link to="About"> About</nuxt-link>
       </div>
       <a :href="`mailto:${links.email}`">
-        <button class="primary text-sm">Contact</button>
+        <button class="primary text-sm rounded-full">Contact</button>
       </a>
     </nav>
   </div>

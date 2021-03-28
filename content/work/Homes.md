@@ -4,7 +4,7 @@ position: 3
 description: 'Winners of the KPMG Canada Ideation Challenge.'
 subCategory: KPMG COMPETITION
 roles: ['Technical Coach']
-img: '/images/homes/homesCover.jpg'
+component: homesPhones
 roleSubTitle:
   - 'Technical Coach': 'Empowering students.'
 roleDescriptions:

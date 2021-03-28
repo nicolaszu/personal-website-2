@@ -6,7 +6,7 @@ export default {
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'nicolas-website',
+    title: 'Nicolas Zuluaga',
     htmlAttrs: {
       lang: 'en',
     },
@@ -38,15 +38,21 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/svg',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    'nuxt-svg-loader',
   ],
-
+  svgLoader: {
+    svgoConfig: {
+      plugins: [
+        { prefixIds: true }, // Disables prefixing for SVG IDs
+      ],
+    },
+  },
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
 

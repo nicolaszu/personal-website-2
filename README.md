@@ -1,4 +1,4 @@
-# nicolas-website
+# Nicolas Zuluaga
 
 ## Build Setup
 

@@ -21,12 +21,13 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.11.1",
-    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "@tailwindcss/postcss7-compat": "npm:@tailwindcss/postcss7-compat",
     "autoprefixer": "9",
     "core-js": "^3.8.2",
     "fibers": "^5.0.0",
     "lottie-web-vue": "^1.0.1",
     "nuxt": "^2.14.12",
+    "nuxt-svg-loader": "^1.2.0",
     "postcss": "7",
     "sass": "^1.32.5",
     "sass-loader": "^10.1.1"

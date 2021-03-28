@@ -1,8 +1,8 @@
 <template>
-  <div class="main-wrapper height-style">
+  <div class="grid height-style">
     <top-header class="hidden md:grid col-span-full" />
     <top-header-mobile class="grid md:hidden col-span-full" />
-    <Nuxt class="col-start-2" />
+    <Nuxt class="col-span-full" />
     <the-footer class="col-span-full" />
   </div>
 </template>

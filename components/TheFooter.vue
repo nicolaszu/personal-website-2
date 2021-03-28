@@ -1,5 +1,5 @@
 <template>
-  <div class="relative main-wrapper bg-gray-100 py-4">
+  <div class="relative main-wrapper bg-white py-4">
     <div
       class="col-start-2 flex flex-col justify-center items-center md:items-start"
     >
@@ -42,8 +42,8 @@
 <script>
 import LottieAnimation from 'lottie-web-vue' // import lottie-web-vue
 import links from '~/assets/links.json'
-import linkedinIcon from '~/assets/icons/linkedin.svg?inline'
-import mailIcon from '~/assets/icons/mail.svg?inline'
+import linkedinIcon from '~/assets/icons/linkedin.svg'
+import mailIcon from '~/assets/icons/mail.svg'
 
 export default {
   components: { linkedinIcon, mailIcon, LottieAnimation },

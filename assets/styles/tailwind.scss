@@ -48,7 +48,7 @@ button:focus {
     grid-template-columns: 1fr 900px 1fr;
   }
   @screen xl {
-    grid-template-columns: 1fr 1150px 1fr;
+    grid-template-columns: 1fr 1050px 1fr;
   }
 }
 
@@ -101,6 +101,10 @@ a.nuxt-link-active {
   src: url('../fonts/ProximaNova-Regular.otf');
   font-style: normal;
   font-weight: 400;
+}
+
+.img-opt {
+  image-rendering: -webkit-optimize-contrast;
 }
 
 @tailwind utilities;
