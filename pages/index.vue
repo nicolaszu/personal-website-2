@@ -5,7 +5,7 @@
         class="col-start-2 grid gap-x-6 grid-cols-1 md:grid-cols-2 pt-16 md:pt-32 pb-12 md:pb-48"
       >
         <h1
-          class="col-start-1 text-5xl lg:text-6xl leading-none font-extrabold md:font-black animate-fade mb-6 md:mb-3"
+          class="col-start-1 text-5xl lg:text-6xl xl:text-8xl leading-none font-extrabold md:font-black animate-fade mb-6 md:mb-3"
           :style="{ 'animation-delay': '.1s' }"
         >
           Nicolas Zuluaga
