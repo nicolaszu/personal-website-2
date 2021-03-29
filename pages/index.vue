@@ -14,16 +14,23 @@
           class="row-span-4 justify-self-center self-center w-auto row-start-3 md:row-start-1 col-start-1 md:col-start-2 animate-fade"
           :style="{ 'animation-delay': '.1s' }"
         >
-          <img
-            ref="meImg"
-            class="img-opt justify-self-center self-center w-full h-auto"
-            src="/me.svg"
-            alt="profile"
-            width="311"
-            height="325"
-            data-src="/me.png"
-            @load.once="lazyLoad('meImg')"
-          />
+          <picture>
+            <source
+              :srcSet="require('~/static/me.png?webp')"
+              type="image/webp"
+            />
+            <source :srcSet="require('~/static/me.png')" type="image/png" />
+            <img
+              ref="meImg"
+              class="img-opt justify-self-center self-center w-full h-auto"
+              src="/me.svg"
+              alt="profile"
+              width="311"
+              height="325"
+              data-src="/me.png"
+              @load.once="lazyLoad('meImg')"
+            />
+          </picture>
         </div>
 
         <h2
@@ -56,12 +63,22 @@
         >
           <div class="relative flex items-center">
             <div class="relative">
-              <img
-                ref="profileImg"
-                class="img-opt justify-self-center self-center rounded-full h-10 md:h-16 w-auto"
-                src="/profile.jpeg?lqip"
-                alt="profile"
-              />
+              <picture>
+                <source
+                  :srcSet="require('~/static/profile.jpeg?webp')"
+                  type="image/webp"
+                />
+                <source
+                  :srcSet="require('~/static/profile.jpeg')"
+                  type="image/jpeg"
+                />
+                <img
+                  ref="profileImg"
+                  class="img-opt justify-self-center self-center rounded-full h-10 md:h-16 w-auto"
+                  src="/profile.jpeg?lqip"
+                  alt="profile"
+                />
+              </picture>
               <div
                 class="absolute bottom-0 right-0 rounded-full h-3 w-3 bg-green-500 mb-1 border-white border-2"
               />
