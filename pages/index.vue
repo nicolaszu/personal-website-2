@@ -32,8 +32,7 @@
         >
           Currently developing and designing the next-generation of enteprise
           tax products at
-          <span class="text-kpmg-blue">KPMG Ignition Tax</span>. Passionate
-          about building impactful solutions.
+          <span class="text-kpmg-blue">KPMG Ignition Tax</span>.
         </h2>
         <div
           class="col-start-1 mb-8 md:mb-12 items-center flex animate-fade"
@@ -60,7 +59,7 @@
               <img
                 ref="profileImg"
                 class="img-opt justify-self-center self-center rounded-full h-10 md:h-16 w-auto"
-                src="/profile.jpeg"
+                src="/profile.jpeg?lqip"
                 alt="profile"
               />
               <div

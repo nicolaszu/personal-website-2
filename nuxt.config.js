@@ -38,6 +38,7 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@aceforth/nuxt-optimized-images',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -55,7 +56,9 @@ export default {
   },
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
-
+  optimizedImages: {
+    optimizeImages: true,
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
   router: {
