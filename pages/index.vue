@@ -133,7 +133,7 @@
     <div id="personal" class="main-wrapper pt-24 bg-gray-50 relative">
       <lottie-animation
         ref="anim"
-        class="w-40 md:w-60 top-0 z-50 absolute top-0 -mt-16 md:-mt-32 ml-32 animate-spin-slow"
+        class="w-40 md:w-60 top-0 z-50 absolute top-0 -mt-16 md:-mt-32 ml-32"
         :animation-data="require('~/assets/animations/devices.json')"
         :loop="true"
         :auto-play="true"
@@ -205,7 +205,6 @@ export default {
   },
   methods: {
     lazyLoad(ref) {
-      console.count('1')
       const img = this.$refs[ref]
       img.src = img.dataset.src
     },

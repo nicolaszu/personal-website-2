@@ -13,9 +13,10 @@
             </div>
           </div>
           <img
+            key="hand"
             class="object-contain self-center w-16 md:w-16 transform transition-all duration-300 ease-in-out animate-hand"
             src="/images/trailBee/White-in-jumper5.png"
-            alt="profile"
+            alt="hand"
             loading="lazy"
           />
           <div class="justify-center items-center flex flex-col row-start-2">
@@ -24,9 +25,10 @@
               @click="appForward"
             >
               <img
+                key="logo"
                 class="object-contain img-opt w-full h-full"
                 src="/images/trailBee/trailBeeLogo.png"
-                alt="profile"
+                alt="logo"
                 loading="lazy"
               />
             </div>
@@ -61,9 +63,10 @@
           </div>
           <template v-if="appScreen === 1">
             <img
+              key="title"
               class="col-span-full row-start-2 row-span-2 object-contain img-opt w-full h-full"
               src="/images/trailBee/trailBeeLogoTitle.png"
-              alt="profile"
+              alt="trailbee logo title"
               loading="lazy"
             />
             <div class="col-span-full row-span-1">
@@ -92,18 +95,14 @@
               <p class="text-lg font-bold text-black">Routes</p>
               <p class="text-xs text-black">March 11, 2021</p>
             </div>
-
             <img
+              key="view"
               class="col-span-full rounded-lg row-start-3 row-span-4 object-contain img-opt w-full h-full"
               src="/images/trailBee/parentView.png"
-              alt="profile"
+              alt="view"
               loading="lazy"
             />
-            <button
-              class="rounded-full h-10 bg-yellow-600 font-medium text-center"
-            >
-              Contact us
-            </button>
+
             <button class="text-black shadow-none" @click="appScreen = 0">
               Back
             </button>

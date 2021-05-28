@@ -57,7 +57,9 @@ export default {
   },
   methods: {
     openLink() {
-      window.open(this.project.github, '_blank').focus()
+      if (this.project.github) {
+        window.open(this.project.github, '_blank').focus()
+      }
     },
   },
 }
