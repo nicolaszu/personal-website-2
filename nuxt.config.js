@@ -6,7 +6,7 @@ export default {
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'nicolas-website',
+    title: 'Nicolas Zuluaga',
     htmlAttrs: {
       lang: 'en',
     },
@@ -38,52 +38,30 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/svg',
+    '@aceforth/nuxt-optimized-images',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    'nuxt-svg-loader',
   ],
-
-  // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {},
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
-  router: {
-    scrollBehavior: async (to, from, savedPosition) => {
-      if (savedPosition) {
-        return savedPosition
-      }
-
-      const findEl = (hash, x) => {
-        return (
-          document.querySelector(hash) ||
-          new Promise((resolve, reject) => {
-            if (x > 50) {
-              return resolve()
-            }
-            setTimeout(() => {
-              resolve(findEl(hash, ++x || 1))
-            }, 100)
-          })
-        )
-      }
-
-      if (to.hash) {
-        const el = await findEl(to.hash)
-        if ('scrollBehavior' in document.documentElement.style) {
-          return window.scrollTo({ top: el.offsetTop, behavior: 'smooth' })
-        } else {
-          return window.scrollTo(0, el.offsetTop)
-        }
-      }
-
-      return { x: 0, y: 0 }
+  svgLoader: {
+    svgoConfig: {
+      plugins: [
+        { prefixIds: true }, // Disables prefixing for SVG IDs
+      ],
     },
   },
+  // Content module configuration: https://go.nuxtjs.dev/config-content
+  content: {},
+  optimizedImages: {
+    optimizeImages: true,
+  },
+  // Build Configuration: https://go.nuxtjs.dev/config-build
+  build: {},
+
   watchers: {
     webpack: {
       aggregateTimeout: 300,

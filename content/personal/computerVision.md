@@ -1,9 +1,8 @@
 ---
 title: 'AI for Endoscopies'
 position: 3
-description: 'Researched and developed a computer vision algorithm to
-detect the orientation of endoscopic robot inside the digestive system.'
+description: 'Computer vision algorithm to detect the orientation of endoscopic robot inside the digestive system.'
 subCategory: Research and Development
-component: 'computerVisionCover'
+img: '/images/computerVision/computerVisionCover.png'
 github: 'https://github.com/nicolaszu/Orientation-Detection-Ellipse'
 ---
