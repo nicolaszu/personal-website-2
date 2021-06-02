@@ -13830,8 +13830,8 @@ type-is@^1.6.16:
     mime-types "~2.1.24"
 
 "typed.js@git+https://github.com/mattboldt/typed.js.git":
-  version "2.0.11"
-  resolved "git+https://github.com/mattboldt/typed.js.git#646952b3e6e24adb1dd63276fcf465eb9caedf21"
+  version "2.0.12"
+  resolved "git+https://github.com/mattboldt/typed.js.git#337109d9ac6558475eea301693e64071dafc9961"
 
 typedarray-to-buffer@^3.1.5:
   version "3.1.5"

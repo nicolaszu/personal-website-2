@@ -23,7 +23,7 @@
         >
           Personal</nuxt-link
         >
-        <nuxt-link to="About"> About</nuxt-link>
+        <nuxt-link :to="{ path: '/photography' }"> Photography</nuxt-link>
       </div>
       <a :href="`mailto:${links.email}`">
         <button class="primary text-sm rounded-full">Contact</button>

@@ -41,10 +41,10 @@
           <nuxt-link
             class="popup-option animate-fade-up"
             :style="{ 'animation-delay': '.3s' }"
-            to="About"
+            :to="{ path: '/photography' }"
             @click.native="isOpen = false"
           >
-            About</nuxt-link
+            Photography</nuxt-link
           >
         </div>
       </div>
