@@ -24,14 +24,14 @@
         <div class="flex flex-col justify-between gap-8">
           <nuxt-link
             :to="{ path: '/', hash: '#work' }"
-            class="popup-option animate-fade"
+            class="popup-option animate-fade-up"
             :style="{ 'animation-delay': '.1s' }"
             @click.native="toggleOption('work')"
           >
             Work
           </nuxt-link>
           <nuxt-link
-            class="popup-option animate-fade"
+            class="popup-option animate-fade-up"
             :style="{ 'animation-delay': '.2s' }"
             :to="{ path: '/', hash: '#personal' }"
             @click.native="toggleOption('personal')"
@@ -39,17 +39,17 @@
             Personal</nuxt-link
           >
           <nuxt-link
-            class="popup-option animate-fade"
+            class="popup-option animate-fade-up"
             :style="{ 'animation-delay': '.3s' }"
-            to="About"
+            :to="{ path: '/photography' }"
             @click.native="isOpen = false"
           >
-            About</nuxt-link
+            Photography</nuxt-link
           >
         </div>
       </div>
       <div
-        class="z-50 flex mb-8 animate-fade"
+        class="z-50 flex mb-8 animate-fade-up"
         :style="{ 'animation-delay': '.4s' }"
       >
         <a :href="`mailto:${links.email}`" class="w-full">

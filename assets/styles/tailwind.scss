@@ -68,7 +68,19 @@ a.nuxt-link-active {
     transform: translateY(0px);
   }
 }
-.animate-fade {
+
+.slide-fade-enter-active {
+}
+.slide-fade-leave-active {
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateY(-120px);
+  opacity: 0;
+}
+
+.animate-fade-up {
   animation: fadeUp 2s 0.1s 1 both cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
