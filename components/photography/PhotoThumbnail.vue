@@ -1,33 +1,34 @@
 <template>
-  <picture>
-    <source
-      :srcSet="require(`~/assets/photos/${folder}/${photo}?webp`)"
-      type="image/webp"
-      :class="[sizeStyle, styles]"
-    />
-    <source
-      :srcSet="require(`~/assets/photos/${folder}/${photo}`)"
-      type="image/jpeg"
-      :class="[sizeStyle, styles]"
-    />
-    <img
-      class="img-opt justify-self-center self-center"
-      :class="[sizeStyle, styles]"
-      :src="require(`~/assets/photos/${folder}/${photo}`)"
-      :alt="`${folder}/${photo}`"
-      loading="lazy"
-    />
-  </picture>
+  <div>
+    <div v-if="!hasLoaded" class="w-auto h-96 bg-gray-200 animate-pulse" />
+
+    <picture :class="{ invisible: !hasLoaded }">
+      <source
+        :srcSet="require(`~/assets/photos/${path}?webp`)"
+        type="image/webp"
+        :class="[sizeStyle, styles]"
+      />
+      <source
+        :srcSet="require(`~/assets/photos/${path}`)"
+        type="image/jpeg"
+        :class="[sizeStyle, styles]"
+      />
+      <img
+        class="img-opt justify-self-center self-center w-full"
+        :class="[sizeStyle, styles]"
+        :src="require(`~/assets/photos/${path}`)"
+        :alt="`${path}`"
+        loading="lazy"
+        @load.once="setLoad"
+      />
+    </picture>
+  </div>
 </template>
 
 <script>
 export default {
   props: {
-    photo: {
-      required: true,
-      type: String,
-    },
-    folder: {
+    path: {
       required: true,
       type: String,
     },
@@ -38,6 +39,16 @@ export default {
     sizeStyle: {
       default: '',
       type: String,
+    },
+  },
+  data() {
+    return {
+      hasLoaded: false,
+    }
+  },
+  methods: {
+    setLoad() {
+      this.hasLoaded = true
     },
   },
 }

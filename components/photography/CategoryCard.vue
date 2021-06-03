@@ -4,18 +4,12 @@
     :to="{ path: `/photography/${to}` }"
   >
     <photo-thumbnail
-      :folder="folder"
-      :photo="cover"
+      :path="`${folder}/${cover}`"
       styles="transform transition-all duration-200 ease-in-out group-hover:opacity-90 group-hover:scale-101 self-center object-cover"
       :size-style="imageSizeStyle"
     />
     <div class="flex flex-col pt-2">
-      <div class="flex justify-between">
-        <p class="text-lg group-hover:text-primary">{{ title }}</p>
-        <p class="text-sm text-gray-500 group-hover:text-primary">
-          {{ totalImages }}
-        </p>
-      </div>
+      <p class="text-lg group-hover:text-primary">{{ title }}</p>
       <p class="text-sm text-gray-500 group-hover:text-primary">{{ date }}</p>
     </div>
   </nuxt-link>
@@ -33,10 +27,6 @@ export default {
     date: {
       required: true,
       type: String,
-    },
-    totalImages: {
-      type: Number,
-      required: true,
     },
     cover: {
       required: true,
