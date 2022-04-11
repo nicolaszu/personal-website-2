@@ -5,7 +5,7 @@
         class="col-start-2 grid gap-x-6 grid-cols-1 md:grid-cols-2 pt-16 md:pt-32 pb-12 md:pb-48"
       >
         <h1
-          class="col-start-1 text-5xl lg:text-6xl xl:text-8xl leading-none font-extrabold md:font-black animate-fade mb-6 md:mb-3 text-white"
+          class="col-start-1 text-5xl lg:text-6xl xl:text-8xl leading-none font-extrabold md:font-black animate-fade mb-6 md:mb-3 text-light-purple"
           :style="{ 'animation-delay': '.1s' }"
         >
           Nicolas Zuluaga
@@ -44,7 +44,7 @@
           :style="{ 'animation-delay': '.2s' }"
         >
           Creating the next-generation of Vision Automation Software at
-          <strong class="text-tesla">Tesla</strong>.
+          <strong>Tesla</strong>.
         </h2>
         <div
           class="col-start-1 mb-8 md:mb-12 items-center flex animate-fade"

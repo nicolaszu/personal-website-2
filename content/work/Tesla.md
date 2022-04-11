@@ -20,7 +20,7 @@ devSkills:
 roleSubTitle:
   - 'Software Engineer': 'Creating globally efficient solutions.'
 roleDescriptions:
-  - 'Software Engineer': 'Building in-house vision automation platforms that automate and improve the process of designing, building, and delivering tesla products.'
+  - 'Software Engineer': 'Building in-house computer vision platforms that automate and improve the process of designing, building, and delivering tesla products.'
 ---
 
 <center-title

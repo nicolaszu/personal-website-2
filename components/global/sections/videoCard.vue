@@ -18,15 +18,16 @@
       >
         {{ title }}
       </p>
-      <iframe
-        width="1120"
-        height="630"
-        :src="video"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+      <div class="iframe-container">
+        <iframe
+          :src="video"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          class="iframe"
+        ></iframe>
+      </div>
     </div>
   </div>
 </template>
@@ -45,3 +46,21 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 90vw;
+  padding-top: 56.25%;
+}
+.iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
