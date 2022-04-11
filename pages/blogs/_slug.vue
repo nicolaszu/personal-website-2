@@ -16,7 +16,7 @@
         >
           <img
             class="img-opt justify-self-center self-center w-full"
-            :src="blog.img"
+            :src="blog.img2 || blog.img"
             alt="work image"
           />
         </div>

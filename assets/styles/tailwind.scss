@@ -52,6 +52,14 @@ button:focus {
   }
 }
 
+.color-background {
+  background: linear-gradient(to right, #c94b4b, #4b134f);
+}
+
+.color-background-reverse {
+  background: linear-gradient(to left, #c94b4b, #4b134f);
+}
+
 a.nuxt-link-active {
   @apply text-primary;
 }

@@ -54,6 +54,7 @@ module.exports = {
         'primary-light': '#4753ff',
         'primary-dark': '#224A9E',
         'kpmg-blue': '#073589',
+        tesla: '##c1cfff',
         gray: {
           50: '#f6f9fc',
           100: '#F2F2F2',

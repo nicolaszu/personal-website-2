@@ -1,6 +1,6 @@
 ---
 title: 'KPMG Ignition Tax'
-position: 1
+position: 2
 hasBlog: 1
 img: '/images/kpmg/kpmgComputer.png'
 description: 'Creating the next-generation of enteprise tax products.'

@@ -33,7 +33,7 @@
         </a>
       </div>
       <p class="text-xs text-gray-400">
-        © Copyright 2021 Nicolas Zuluaga. All rights reserved.
+        © Copyright 2022 Nicolas Zuluaga. All rights reserved.
       </p>
     </div>
   </div>

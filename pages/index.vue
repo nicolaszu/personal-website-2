@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="main-wrapper">
+    <div class="main-wrapper color-background">
       <div
         class="col-start-2 grid gap-x-6 grid-cols-1 md:grid-cols-2 pt-16 md:pt-32 pb-12 md:pb-48"
       >
         <h1
-          class="col-start-1 text-5xl lg:text-6xl xl:text-8xl leading-none font-extrabold md:font-black animate-fade mb-6 md:mb-3"
+          class="col-start-1 text-5xl lg:text-6xl xl:text-8xl leading-none font-extrabold md:font-black animate-fade mb-6 md:mb-3 text-white"
           :style="{ 'animation-delay': '.1s' }"
         >
           Nicolas Zuluaga
@@ -14,7 +14,7 @@
           class="row-span-4 justify-self-center self-center w-auto row-start-3 md:row-start-1 col-start-1 md:col-start-2 animate-fade"
           :style="{ 'animation-delay': '.1s' }"
         >
-          <picture>
+          <!-- <picture>
             <source
               :srcSet="require('~/static/me.png?webp')"
               type="image/webp"
@@ -30,23 +30,28 @@
               data-src="/me.png"
               @load.once="lazyLoad('meImg')"
             />
-          </picture>
+          </picture> -->
+          <img
+            class="img-opt justify-self-center self-center w-full h-auto transform fli"
+            src="/me.webp"
+            width="311"
+            height="325"
+          />
         </div>
 
         <h2
-          class="col-start-1 text-gray-700 text-lg md:text-xl lg:text-2xl mb-7 animate-fade"
+          class="col-start-1 text-lg md:text-xl lg:text-2xl mb-7 animate-fade text-white"
           :style="{ 'animation-delay': '.2s' }"
         >
-          Currently developing and designing the next-generation of enteprise
-          tax products at
-          <span class="text-kpmg-blue">KPMG Ignition Tax</span>.
+          Creating the next-generation of Vision Automation Software at
+          <strong class="text-tesla">Tesla</strong>.
         </h2>
         <div
           class="col-start-1 mb-8 md:mb-12 items-center flex animate-fade"
           :style="{ 'animation-delay': '.3s', height: 'fit-content' }"
         >
           <nuxt-link
-            class="primary py-2 px-6 mr-4"
+            class="primary py-2 px-6 mr-4 card-shadow"
             :to="{ path: '/', hash: '#work' }"
             tag="button"
             @click.native="scrollToId('work')"
@@ -54,11 +59,13 @@
             Get started
           </nuxt-link>
           <a :href="`mailto:${links.email}`">
-            <button class="h-full secondary py-2 px-6">Get in touch</button>
+            <button class="card-shadow h-full secondary py-2 px-6">
+              Get in touch
+            </button>
           </a>
         </div>
         <div
-          class="col-start-1 flex items-center bg-gray-100 p-4 rounded-lg justify-between animate-fade"
+          class="col-start-1 flex items-center bg-gray-100 p-4 rounded-lg justify-between animate-fade card-shadow"
           :style="{ 'animation-delay': '.4s' }"
         >
           <div class="relative flex items-center">
@@ -112,7 +119,7 @@
             Here's what I've worked on
           </p>
           <p class="text-gray-800 text-md md:text-lg text-center">
-            Currently working at KPMG in Toronto, Canada.
+            Currently working at Tesla in San Francisco, US.
           </p>
         </div>
         <div class="grid grid-cols-2 gap-6">
@@ -121,7 +128,7 @@
             :key="project.slug"
             :project="project"
             :class="[
-              index + 1 === personalProjects.length || index === 0
+              index + 1 === workProjects.length || index === 0 || index === 1
                 ? 'col-span-full'
                 : 'col-span-2 lg:col-span-1',
             ]"
@@ -212,4 +219,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.card-shadow {
+  box-shadow: 0 50px 100px -20px rgb(50 50 93 / 25%),
+    0 30px 60px -30px rgb(0 0 0 / 30%), inset 0 -2px 6px 0 rgb(10 37 64 / 35%);
+  -webkit-user-select: none;
+}
+</style>

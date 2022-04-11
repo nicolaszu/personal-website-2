@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="main-wrapper bg-white bg-opacity-75 border-b border-gray-100 py-1"
-  >
+  <div class="main-wrapper bg-white bg-opacity-75 py-1">
     <nav class="flex col-start-2 justify-between items-center">
       <nuxt-link
         tag="div"
