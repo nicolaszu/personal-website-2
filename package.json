@@ -35,7 +35,7 @@
     "nuxt-svg-loader": "^1.2.0",
     "postcss": "7",
     "responsive-loader": "^2.3.0",
-    "sass": "^1.32.5",
+    "sass": "^1.52.2",
     "sass-loader": "^10.1.1",
     "sharp": "^0.27.2",
     "sqip-loader": "^1.0.0",
